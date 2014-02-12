@@ -45,10 +45,14 @@
     <Compile Include="SecureTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="SecureTextBox.Designer.cs" />
+    <Compile Include="SecureTextBox.Designer.cs">
+      <DependentUpon>SecureTextBox.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="SecureTextBox.resx" />
+    <EmbeddedResource Include="SecureTextBox.resx">
+      <DependentUpon>SecureTextBox.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

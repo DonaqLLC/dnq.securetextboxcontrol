@@ -339,5 +339,10 @@ namespace DNQ.Controls
 
             _nextChangeOk = false;            
         }
+
+        private void SecureTextBox_FontChanged(object sender, EventArgs e)
+        {
+            this.textbox.Font = this.Font;
+        }
     }
 }

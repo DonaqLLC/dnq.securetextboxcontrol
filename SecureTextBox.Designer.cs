@@ -33,11 +33,12 @@
             // 
             // textbox
             // 
+            this.textbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textbox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textbox.Location = new System.Drawing.Point(2, 2);
+            this.textbox.Margin = new System.Windows.Forms.Padding(0);
             this.textbox.Name = "textbox";
-            this.textbox.Size = new System.Drawing.Size(257, 13);
+            this.textbox.Size = new System.Drawing.Size(195, 13);
             this.textbox.TabIndex = 0;
             this.textbox.UseSystemPasswordChar = true;
             this.textbox.WordWrap = false;
@@ -51,14 +52,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.Controls.Add(this.textbox);
             this.Name = "SecureTextBox";
-            this.Padding = new System.Windows.Forms.Padding(2);
-            this.Size = new System.Drawing.Size(261, 60);
+            this.Size = new System.Drawing.Size(197, 18);
             this.Load += new System.EventHandler(this.SecureTextBox_Load);
             this.BackColorChanged += new System.EventHandler(this.SecureTextBox_BackColorChanged);
+            this.FontChanged += new System.EventHandler(this.SecureTextBox_FontChanged);
             this.ResumeLayout(false);
             this.PerformLayout();
 
